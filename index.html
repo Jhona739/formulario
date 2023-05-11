@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="logo__img" src="img/logo.png" alt="logo-life">
+        </div>
+    </header>
+    <div class="container">
+        <section class="section">
+            <div class="section__container">
+                <lottie-player class="container__animacion" src="https://assets10.lottiefiles.com/packages/lf20_aim4u10w.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+            </div>
+            <form action="#" method="POST" class="form">
+			    <h1>Registrate</h1>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required> 
+                <input type="password" name="clave" id="clave"  placeholder="Ingresa tu clave" required> 
+                <input type="number" name="edad" id="edad" max="60" min="16" step="1" placeholder="Digita tu edad" required>
+                <input type="date" name="nacimiento" id="nacimiento" min="1930-01-01" max="2030-12-31" value="2018-07-22" required>
+                <select name="roll" required>
+                    <option value="" selected>Escoge tu roll</option>
+                    <option value="administrador">Soy un administrador</option>
+                    <option value="usuario">Soy un usuario</option>
+                </select>
+                <button type="submit" class="button uno" value="Enviar" name="button" id="button"><span>Enviar</span></button>
+            </form>
+        </section>
+    </div>
+    <script src = " https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
